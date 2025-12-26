@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="css\portfoliostyle.css">
+</head>
+
+<script>
+  function goToTop() {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  }
+</script>
+
+<body>
+
+<header class="center">
+    <h1>Welcome to My Portfolio</h1>
+
+    <div class="nav-buttons">
+    <a href="#about"><button class="button">About</button></a>
+    <a href="#skills"><button class="button">Skills</button></a>
+    <a href="#projects"><button class="button">Projects</button></a>
+    <a href="#contact"><button class="button">Contact</button></a>
+</div>
+
+</header>
+
+<main>
+    <section class="center" id="about">
+        <div>
+            <h1>Chettigiri Monika Priya</h1>
+            <img src="css\myphoto.jpeg" alt="My Photo">
+            <p>I am a passionate front-end developer.</p>
+            <p>Currently attending a Full Stack internship.</p>
+        </div>
+    </section>
+
+    <section class="center" id="skills">
+        <div>
+            <h1>My Skills</h1>
+            <ol>
+                <li>Python Basics</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+            </ol>
+        </div>
+    </section>
+
+    <section class="center" id="projects">
+        <div>
+            <h1>My Projects</h1>
+            <table border="1">
+                <tr>
+                    <th>Project</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td>Portfolio Website</td>
+                    <td>Built using HTML, CSS, JavaScript</td>
+                </tr>
+                <tr>
+                    <td>To-Do List</td>
+                    <td>Built using React JS</td>
+                </tr>
+            </table>
+        </div>
+    </section>
+
+    <section class="center" id="contact">
+        <div>
+            <h1>Contact Me</h1>
+
+            <form>
+                <label>Name:</label>
+                <input type="text" class="input"><br><br>
+
+                <label>Email:</label>
+                <input type="email" class="input"><br><br>
+
+                <b>Gender:</b>
+                <input type="radio" name="gender"> Male
+                <input type="radio" name="gender"> Female<br><br>
+
+                <b>Interests:</b>
+                <input type="checkbox"> Coding
+                <input type="checkbox"> Reading<br><br>
+
+                <button class="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+</main>
+
+<button class="fixedbutton" onclick="goToTop()">TOP</button>
+
+<footer class="center">
+    <p>&copy; 2023 My Portfolio</p>
+</footer>
+
+</body>
+</html>
